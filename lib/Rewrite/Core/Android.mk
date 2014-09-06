@@ -27,6 +27,7 @@ clang_rewrite_core_SRC_FILES := \
   TokenRewriter.cpp
 
 LOCAL_SRC_FILES := $(clang_rewrite_core_SRC_FILES)
+LOCAL_CFLAGS := $(call-cc-option,-Qunused-arguments)
 
 
 include $(CLANG_HOST_BUILD_MK)
